@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Battery")(type "KiCad")(uri "C:/Users/gavin/Downloads/Battery.pretty")(options "")(descr ""))
+)
