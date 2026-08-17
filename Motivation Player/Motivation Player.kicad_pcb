@@ -11820,6 +11820,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Motivation Player\nMade by Gavin Wu"
+		(at 79 64.5 0)
+		(layer "F.SilkS")
+		(uuid "49edcaac-702f-4276-823e-3cfb517e7a02")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "100 uF\n"
 		(at 93 134.5 0)
 		(layer "F.SilkS")
