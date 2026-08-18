@@ -13,15 +13,15 @@ I wanted to create this project as a way to learn how to make PCB's and design i
 - Power switch to turn on and off the project (to save battery)
 - SD card module to hold many recordings (Assuming ~2 mb per .WAV file, roughly 64 recordings on an 128 mb SD card)
 
-#CAD Model
+# CAD Model
 The enclosure for the PCB is comprised of a bottom and a lid. The two screw together with M2 screws in each of the corner (4 total).
 
-#PCB
+# PCB
 
-#Firmware
+# Firmware
 Circuit Python was used to program the project as it works best with the Raspberry Pi Pico. Libraries from Adafruit were also used to interface with the OLED. The program can only read .WAV files from the SD card, with the SD card being formatted in FAT32 and the .WAV files being mono-channel, 16-bit, 22kHz.
 
-#Specifications
+# Specifications
 
 BOM
 - 
