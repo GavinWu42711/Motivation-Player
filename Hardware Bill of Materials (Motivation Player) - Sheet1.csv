@@ -1,0 +1,23 @@
+Item Name,Qty,Price (total) (USD),Item link,Notes
+Raspberry Pi Pico,1,$10.90,https://www.amazon.ca/Raspberry-Pi-SC1631-Pico-2/dp/B0DCKH85WR/,Needs pin headers
+Rotary Encoder,1,$0.00,N/A,Already have this item
+Potentiometer,1,$0.00,N/A,Already have this item
+SSD1306,1,$0.00,N/A,Already have this item
+Mini SD Card Module,1,$11.39,https://www.amazon.ca/Hutomwua-Adapter-Reader-Module-Interface/dp/B0FYKCCMLY/,
+Push Button,2,$0.00,N/A,Already have this item
+SPST switch,1,$9.76,https://www.amazon.ca/Gebildet-2-Terminal-2-Position-Miniature-Electronic/dp/B0C3QZ4W6N/?th=1,
+3xAA Battery Holder,1,$10.05,https://www.amazon.ca/LampVPath-Battery-Holder-Leads-Wires/dp/B07WRQ3XTJ/,
+LM386,1,$7.23,https://www.amazon.ca/DKARDU-LM386N-Amplifier-Voltage-Regulator/dp/B0C13JTR7X/,
+30mm Speaker,1,$10.03,https://www.amazon.ca/Gikfun-Speaker-Diameter-Arduino-Speakers/dp/B07BFTYY6L/,
+10 uF capacitor (polarized),1,$0.00,N/A,Already have this item
+10 uF capacitor (non-polarized),1,$0.00,N/A,Part of ceramic capacitor kit
+100 uF capacitor (polarized),2,$0.00,N/A,Already have this item
+250 uF capacitor (polarized),1,$0.00,https://www.amazon.ca/Swpeet-Electrolytic-Capacitors-0-1uF%EF%BC%8D1000uF-Assortment/dp/B07KC99W2K/,to be bought with own money
+50 nF (0.05 uF) capacitor (non-polarized),1,$0.00,https://www.amazon.ca/Tnisesm-Assortment-0-1uF-100nF-Monolithic-Multilayer/dp/B08DNF191P/?th=1,to be bought with own money
+AA battery,3,$0.00,N/A,Already have this item
+SD card,1,$2.08,https://www.amazon.ca/Premium-Memory-Card-128Mb-Attractive/dp/B0GK15Y4Q2/,
+Pinheaders,1,$2.44,https://www.amazon.ca/Replacement-Straight-Durable-Industrial-Components/dp/B0GKR4V8KP/,For the Raspberry Pi
+3D printed enclosure,1,$0.00,N/A,Printed by myself 
+M2 Screws,4,$0.00,N/A,Already have this item
+PCB,1,$20.92,JLCPCB,PCB files in repository
+Total Price (USD):,$84.80,,,
