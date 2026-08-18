@@ -21,11 +21,7 @@ The enclosure for the PCB is comprised of a bottom and a lid. The two screw toge
 # Firmware
 Circuit Python was used to program the project as it works best with the Raspberry Pi Pico. Libraries from Adafruit were also used to interface with the OLED. The program can only read .WAV files from the SD card, with the SD card being formatted in FAT32 and the .WAV files being mono-channel, 16-bit, 22kHz.
 
-# Specifications
+The "lib" folder in the "Firmware" folder contains the library files that need to be uploaded to the Pi Pico in addition to the code and Circuit Python.
 
-BOM
+# BOM
 - 
-
-Other
-- Circuit Python
-- Adafruit libraries
