@@ -1,5 +1,5 @@
 # Motivation Player
-An MP3-like player where I can play "motivational" quotes from my friends from when I'm feeling down
+An MP3-like player where WAV files of "motivational" quotes can be played from an SD card
 
 # Motivation
 I wanted to create this project as a way to learn how to make PCB's and design in CAD with minimal help from tutorials. I also often struggle with motivation and fall into the cyclical loop of "negative thoughts" so this project is meant to help break that if I'm having a bad day
