@@ -13,11 +13,11 @@ I wanted to create this project as a way to learn how to make PCB's and design i
 - Power switch to turn on and off the project (to save battery)
 - SD card module to hold many recordings (Assuming ~2 mb per .WAV file, roughly 64 recordings on an 128 mb SD card)
 
-# CAD Model
-The enclosure for the PCB is comprised of a bottom and a lid. The two screw together with M2 screws in each of the corner (4 total). All the parts were designed using Fusion.
-
 # How It Works
 Using SPI, the Pi Pico reads the .WAV files from the SD card module. Each file is named with an index (i.e 0.wav, 1.wav, e.t.c) for simplicity. Extra information about the file -- such as the name of the person who made the audio -- are stored in txt files named similarly. The Pi Pico then uses PWM to mimic DAC, with an extra capacitor and potentiometer to smooth it out. Finally, the audio passes through an LM386 audio amplifier before reaching the speaker. The LM386 was chosen due to not needing a heat sink (saving space) while still providing good quality audio. Information about the audio being played is displayed on a 128 x 64 SSD1306 through I2C. This display was chosen due to having a smaller form factor and easy to read text.
+
+# CAD Model
+The enclosure for the PCB is comprised of a bottom and a lid. The two screw together with M2 screws in each of the corner (4 total). All the parts were designed using Fusion.
 
 **Lid**
 <img width="1235" height="688" alt="image" src="https://github.com/user-attachments/assets/1619e5f0-63c2-47e4-b9b9-c8af7acd143e" />
