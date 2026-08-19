@@ -16,6 +16,9 @@ I wanted to create this project as a way to learn how to make PCB's and design i
 # CAD Model
 The enclosure for the PCB is comprised of a bottom and a lid. The two screw together with M2 screws in each of the corner (4 total). All the parts were designed using Fusion.
 
+# How It Works
+Using SPI, the Pi Pico reads the .WAV files from the SD card module. Each file is named with an index (i.e 0.wav, 1.wav, e.t.c) for simplicity. Extra information about the file -- such as the name of the person who made the audio -- are stored in txt files named similarly. The Pi Pico then uses PWM to mimic DAC, with an extra capacitor and potentiometer to smooth it out. Finally, the audio passes through an LM386 audio amplifier before reaching the speaker. The LM386 was chosen due to not needing a heat sink (saving space) while still providing good quality audio. Information about the audio being played is displayed on a 128 x 64 SSD1306 through I2C. This display was chosen due to having a smaller form factor and easy to read text.
+
 **Lid**
 <img width="1235" height="688" alt="image" src="https://github.com/user-attachments/assets/1619e5f0-63c2-47e4-b9b9-c8af7acd143e" />
 
@@ -44,7 +47,7 @@ The PCB was designed using KiCAD. All the parts were chosen to be through hole i
 *C5 is supposed to be a non-polarized capacitor*
 
 # Firmware
-Circuit Python was used to program the project as it works best with the Raspberry Pi Pico. Libraries from Adafruit were also used to interface with the OLED. The program can only read .WAV files from the SD card, with the SD card being formatted in FAT32 and the .WAV files being mono-channel, 16-bit, 22kHz.
+Circuit Python was used to program the project as it interfaces best with the many pins of the Raspberry Pi Pico. Libraries from Adafruit were also used to interface with the OLED. The program can only read .WAV files from the SD card, with the SD card being formatted in FAT32 and the .WAV files being mono-channel, 16-bit, 22kHz.
 
 The "lib" folder in the "Firmware" folder contains the library files that need to be uploaded to the Pi Pico in addition to the code and Circuit Python. These imports include "adafruit_display_text" and "adafruit_displayio_ssd1306". Other imports are part of Circuit Python.
 
