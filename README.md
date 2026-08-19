@@ -46,4 +46,25 @@ Circuit Python was used to program the project as it works best with the Raspber
 The "lib" folder in the "Firmware" folder contains the library files that need to be uploaded to the Pi Pico in addition to the code and Circuit Python.
 
 # BOM
-- 
+- 1 Raspberry Pi Pico
+- 1 rotary encoder
+- 1 potentiometer
+- 1 SSD1306 (128 x 64)
+- 1 micro SD card module
+- 2 push buttons
+- 1 SPST switch
+- 1 3xAA battery holder module
+- 1 LM3886
+- 1 30mm speaker
+- 1 0.05 uF (50 nF) capacitor (non-polarized)
+- 1 10 uF capacitor (polarized)
+- 1 10 uF capacitor (non-polarized)
+- 2 100 uF capacitors (polarized)
+- 1 250 uF capacitor (polarized)
+- 3 AA batteries
+- 1 SD card (any size works)
+- Pinheaders
+- 3D printed enclosure
+- PCB
+- 4 M2 Screws
+  
