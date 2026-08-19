@@ -43,7 +43,7 @@ The PCB was designed using KiCAD. All the parts were chosen to be through hole i
 # Firmware
 Circuit Python was used to program the project as it works best with the Raspberry Pi Pico. Libraries from Adafruit were also used to interface with the OLED. The program can only read .WAV files from the SD card, with the SD card being formatted in FAT32 and the .WAV files being mono-channel, 16-bit, 22kHz.
 
-The "lib" folder in the "Firmware" folder contains the library files that need to be uploaded to the Pi Pico in addition to the code and Circuit Python.
+The "lib" folder in the "Firmware" folder contains the library files that need to be uploaded to the Pi Pico in addition to the code and Circuit Python. These imports include "adafruit_display_text" and "adafruit_displayio_ssd1306". Other imports are part of Circuit Python.
 
 # BOM
 - 1 Raspberry Pi Pico
