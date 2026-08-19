@@ -38,6 +38,9 @@ The PCB was designed using KiCAD. All the parts were chosen to be through hole i
 **PCB**
 <img width="1075" height="660" alt="image" src="https://github.com/user-attachments/assets/264b83c2-f9cf-4196-993b-98ba599b7f30" />
 
+<img width="1199" height="635" alt="image" src="https://github.com/user-attachments/assets/18e37ded-ffaa-47e0-8e79-48199745320a" />
+
+
 *C5 is supposed to be a non-polarized capacitor*
 
 # Firmware
