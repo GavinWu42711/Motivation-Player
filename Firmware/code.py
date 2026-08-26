@@ -90,7 +90,6 @@ name_text = "- testtest"
 name_text_area = label.Label(terminalio.FONT, text=name_text, color=0xFFFFFF, x=28, y=40)
 splash.append(name_text_area)
 
-
 #Update the display to show the current audio file playing/to be played
 def update_display(index:int):  
     index_text_area.text = "Audio #" + index
