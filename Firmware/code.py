@@ -6,7 +6,6 @@ import busio
 import storage
 import rotaryio
 import sdcardio
-from micropython import const
 from audiocore import WaveFile
 from audiopwmio import PWMAudioOut as AudioOut
 import displayio
@@ -17,8 +16,8 @@ import terminalio
 
 #Setup SSD1306
 displayio.release_displays()
-SCL = const(board.GP13)
-SDA = const(board.GP12)
+SCL = board.GP13
+SDA = board.GP12
 i2c = busio.I2C(SCL, SDA)
 display_bus = I2CDisplayBus(i2c, device_address=0x3C)
 display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
@@ -26,7 +25,7 @@ splash = displayio.Group()
 display.root_group = splash
 
 #Setup speaker
-SPEAKER_PIN = const(board.GP17)
+SPEAKER_PIN = board.GP17
 speaker = AudioOut(SPEAKER_PIN)
 
 #Setup the play button
@@ -40,20 +39,20 @@ rand_btn.switch_to_input(pull = digitalio.Pull.UP)
 rand_btn_pressed = False
 
 #Setup rotary encoder scroller
-A_PIN = const(board.GP9)
-B_PIN = const(board.GP8)
+A_PIN = board.GP9
+B_PIN = board.GP8
 scroll_encoder = rotaryio.IncrementalEncoder(A_PIN, B_PIN)
 last_position = scroll_encoder.posiion
 
 #Index of the current audio to play
 audio_index:int = 0
-MAX_INDEX = const(62)
+MAX_INDEX = 62
 
 #SD card pins
-SCK = const(board.GP2)
-MOSI = const(board.GP3)
-MISO = const(board.GP4)
-CS = const(board.GP5)
+SCK = board.GP2
+MOSI = board.GP3
+MISO = board.GP4
+CS = board.GP5
 
 #Set up SDcard
 spi = busio.SPI(SCK, MOSI, MISO)
