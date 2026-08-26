@@ -42,7 +42,7 @@ rand_btn_pressed = False
 A_PIN = board.GP9
 B_PIN = board.GP8
 scroll_encoder = rotaryio.IncrementalEncoder(A_PIN, B_PIN)
-last_position = scroll_encoder.posiion
+last_position = scroll_encoder.position
 
 #Index of the current audio to play
 audio_index:int = 0
@@ -78,13 +78,18 @@ def play_audio(index:int):
         print("Error: " + Exception)
 
 #Setup texts on the display
-index_text = ""
-index_text_area = label.Label(terminalio.FONT, text=index_text, color=0xFFFFFF, x=28, y=15)
+TITLE_TEXT = "MOTIVATION PLAYER"
+TITLE_TEXT_AREA = label.Label(terminalio.FONT, text = TITLE_TEXT, color = 0xFFFFFF, x = 15, y = 8)
+splash.append(TITLE_TEXT_AREA)
+
+index_text = "Audio #0"
+index_text_area = label.Label(terminalio.FONT, text=index_text, color=0xFFFFFF, x=28, y=24)
 splash.append(index_text_area)
 
-name_text = ""
-name_text_area = label.Label(terminalio.FONT, text=name_text, color=0xFFFFFF, x=28, y=30)
-splash.append(name_text)
+name_text = "- testtest"
+name_text_area = label.Label(terminalio.FONT, text=name_text, color=0xFFFFFF, x=28, y=40)
+splash.append(name_text_area)
+
 
 #Update the display to show the current audio file playing/to be played
 def update_display(index:int):  
