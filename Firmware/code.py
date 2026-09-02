@@ -39,8 +39,8 @@ rand_btn.switch_to_input(pull = digitalio.Pull.UP)
 rand_btn_pressed = False
 
 #Setup rotary encoder scroller
-A_PIN = board.GP9
-B_PIN = board.GP8
+A_PIN = board.GP8
+B_PIN = board.GP9
 scroll_encoder = rotaryio.IncrementalEncoder(A_PIN, B_PIN)
 last_position = scroll_encoder.position
 
@@ -62,21 +62,6 @@ sdcard = sdcardio.SDCard(spi,CS)
 vfs = storage.VfsFat(sdcard)
 storage.mount(vfs, "/sd")
 
-#Play an audio file based on the index passed in
-def play_audio(index:int):
-
-    #Stop any audio from play if there is audio playing
-    if speaker.playing:
-        speaker.pause()
-
-    try:
-        wave_file = open("/sd/" + index + ".wav", "rb")
-        wave = WaveFile(wave_file)
-        speaker.play(wave) 
-    except Exception:
-        print("Error playing audio")
-        print("Error: " + Exception)
-
 #Setup texts on the display
 TITLE_TEXT = "MOTIVATION PLAYER"
 TITLE_TEXT_AREA = label.Label(terminalio.FONT, text = TITLE_TEXT, color = 0xFFFFFF, x = 15, y = 8)
@@ -90,18 +75,35 @@ name_text = "- testtest"
 name_text_area = label.Label(terminalio.FONT, text=name_text, color=0xFFFFFF, x=28, y=40)
 splash.append(name_text_area)
 
+#Play an audio file based on the index passed in
+def play_audio(index:int):
+
+    #Stop any audio from play if there is audio playing
+    if speaker.playing:
+        speaker.pause()
+
+    try:
+        wave_file = open("/sd/" + str(index) + ".wav", "rb")
+        wave = WaveFile(wave_file)
+        speaker.play(wave) 
+    except Exception:
+        print("Error playing audio")
+        print("Error: " + str(Exception))
+
 #Update the display to show the current audio file playing/to be played
 def update_display(index:int):  
-    index_text_area.text = "Audio #" + index
+    index_text_area.text = "Audio #" + str(index + 1)
 
     #Get name of person who gave quote in from a txt file
     try:
-        with open("/sd/" + index + ".txt".r) as file:
+        with open("/sd/" + str(index) + ".txt","r") as file:
             name = file.readline().strip()
             name_text_area.text = "- " + name
     except:
         name_text_area.text = "- Anonymous"
 
+#Make it so on boot-up, the first audio is shown
+update_display(0)
 
 #Main loop
 while True:
