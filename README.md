@@ -1,5 +1,8 @@
 # Motivation Player
 An MP3-like player where WAV files of "motivational" quotes can be played from an SD card
+<img width="545" height="416" alt="Screenshot 2026-09-13 124237" src="https://github.com/user-attachments/assets/0ba6bafe-0281-4c45-8328-30957086b128" />
+
+**(Link to see it in action -> https://youtube.com/shorts/U501b-Ut6_k)**
 
 # Motivation
 I wanted to create this project as a way to learn how to make PCB's and design in CAD with minimal help from tutorials. I also often struggle with motivation and fall into the cyclical loop of "negative thoughts" so this project is meant to help break that if I'm having a bad day
