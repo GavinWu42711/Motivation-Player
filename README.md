@@ -49,6 +49,11 @@ The PCB was designed using KiCAD. All the parts were chosen to be through hole i
 
 *C5 is supposed to be a non-polarized capacitor*
 
+
+**Soldered PCB**
+<img width="726" height="496" alt="Screenshot 2026-09-13 124249" src="https://github.com/user-attachments/assets/47be71c0-a4cd-4574-861c-2faa59c326ae" />
+
+
 # Firmware
 Circuit Python was used to program the project as it interfaces best with the many pins of the Raspberry Pi Pico. Libraries from Adafruit were also used to interface with the OLED. The program can only read .WAV files from the SD card, with the SD card being formatted in FAT32 and the .WAV files being mono-channel, 16-bit, 22kHz.
 
