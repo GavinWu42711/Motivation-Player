@@ -51,6 +51,7 @@ The PCB was designed using KiCAD. All the parts were chosen to be through hole i
 
 
 **Soldered PCB**
+
 <img width="726" height="496" alt="Screenshot 2026-09-13 124249" src="https://github.com/user-attachments/assets/47be71c0-a4cd-4574-861c-2faa59c326ae" />
 
 
